@@ -68,6 +68,7 @@ body {
 
   z-index: 9999;
   padding: 20px;
+  padding-bottom: 40px
 }
 
 .hidden {
@@ -91,7 +92,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .key {
@@ -127,8 +128,8 @@ body {
 .ok-wide {
   width: 80vw;
   max-width: 400px;
-  height: 20vw;
-  max-height: 100px;
+  height: 16vw;
+  max-height: 80px;
   font-size: 40px;
   background: #00aa00;
 }
