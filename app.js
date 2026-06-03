@@ -210,37 +210,6 @@ document.getElementById("resetBtn").onclick = () => {
   renderGrid();
 };
 
-// -------------------------------
-// Export
-// -------------------------------
-/* document.getElementById("exportBtn").onclick = () => {
-  const data = JSON.stringify(grid);
-  const blob = new Blob([data], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
 
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "freezer-grid.json";
-  a.click();
-
-  URL.revokeObjectURL(url);
-};
-
-// -------------------------------
-// Import
-// -------------------------------
-document.getElementById("importFile").onchange = (e) => {
-  const file = e.target.files[0];
-  const reader = new FileReader();
-
-  reader.onload = () => {
-    grid = JSON.parse(reader.result);
-    saveGrid(grid);
-    renderGrid();
-  };
-
-  reader.readAs(file);
-};
-*/
 
 
