@@ -129,7 +129,7 @@ function closeKeypad() {
 document.querySelectorAll(".key").forEach(btn => {
   btn.onclick = () => {
     keypadValue += btn.textContent;
-    document.getElementById("keypad-display").Content = keypadValue;
+    document.getElementById("keypad-display").textContent = keypadValue;
   };
 });
 
@@ -157,7 +157,7 @@ document.getElementById("keypad-cancel").onclick = closeKeypad;
 
 document.getElementById("keypad-back").onclick = () => {
   keypadValue = keypadValue.slice(0, -1);
-  document.getElementById("keypad-display").Content = keypadValue;
+  document.getElementById("keypad-display").textContent = keypadValue;
 };
 
 // -------------------------------
