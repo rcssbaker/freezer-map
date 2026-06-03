@@ -51,7 +51,8 @@ function renderGrid() {
       // Value
       const value = document.createElement("div");
       value.className = "cell-value";
-      value.textContent = grid[r][c].value;
+      value.textContent = grid[r][c].value === 0 ? "" : grid[r][c].value;
+
 
       // Make white cells readable
       if (grid[r][c].color === "white") {
@@ -111,7 +112,7 @@ function openKeypad(r, c, mode = "edit") {
   }
 
   keypadValue = "";
-  document.getElementById("keypad-display").textContent = "";
+  document.getElementById("keypad-display").Content = "";
   document.getElementById("keypad").classList.remove("hidden");
 }
 
@@ -124,8 +125,8 @@ function closeKeypad() {
 // Number buttons
 document.querySelectorAll(".key").forEach(btn => {
   btn.onclick = () => {
-    keypadValue += btn.textContent;
-    document.getElementById("keypad-display").textContent = keypadValue;
+    keypadValue += btn.Content;
+    document.getElementById("keypad-display").Content = keypadValue;
   };
 });
 
@@ -135,7 +136,7 @@ document.getElementById("keypad-ok").onclick = () => {
   // EDIT MODE
   if (keypadMode === "edit" && keypadTarget) {
     const { r, c } = keypadTarget;
-    grid[r][c].value = keypadValue || 0;
+    grid[r][c].value = keypadValue === "" ? 0 : Number(keypadValue);
     saveGrid(grid);
     renderGrid();
   }
@@ -153,7 +154,7 @@ document.getElementById("keypad-cancel").onclick = closeKeypad;
 
 document.getElementById("keypad-back").onclick = () => {
   keypadValue = keypadValue.slice(0, -1);
-  document.getElementById("keypad-display").textContent = keypadValue;
+  document.getElementById("keypad-display").Content = keypadValue;
 };
 
 // -------------------------------
@@ -235,7 +236,7 @@ document.getElementById("importFile").onchange = (e) => {
     renderGrid();
   };
 
-  reader.readAsText(file);
+  reader.readAs(file);
 };
 
 
