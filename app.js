@@ -115,7 +115,7 @@ function openKeypad(r, c, mode = "edit") {
   }
 
   keypadValue = "";
-  document.getElementById("keypad-display").Content = "";
+  document.getElementById("keypad-display").textContent = "";
   document.getElementById("keypad").classList.remove("hidden");
 }
 
