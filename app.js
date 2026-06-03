@@ -213,7 +213,7 @@ document.getElementById("resetBtn").onclick = () => {
 // -------------------------------
 // Export
 // -------------------------------
-document.getElementById("exportBtn").onclick = () => {
+/* document.getElementById("exportBtn").onclick = () => {
   const data = JSON.stringify(grid);
   const blob = new Blob([data], { type: "application/json" });
   const url = URL.createObjectURL(blob);
@@ -241,6 +241,6 @@ document.getElementById("importFile").onchange = (e) => {
 
   reader.readAs(file);
 };
-
+*/
 
 
