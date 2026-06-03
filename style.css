@@ -134,13 +134,6 @@ body {
 }
 
 
-#searchInput {
-  pointer-events: none;
-}
-
-#searchInput {
-  width: 30px;   /* adjust to your liking */
-}
 .grid-label {
   font-size: 28px;
   font-weight: bold;
