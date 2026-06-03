@@ -51,7 +51,8 @@ function renderGrid() {
       // Value
       const value = document.createElement("div");
       value.className = "cell-value";
-      value.textContent = grid[r][c].value === 0 ? "" : grid[r][c].value;
+      value.textContent = grid[r][c].value === 0 ? "·" : grid[r][c].value;
+      value.style.opacity = grid[r][c].value === 0 ? "0.25" : "1";
 
 
       // Make white cells readable
