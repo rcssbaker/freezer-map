@@ -5,9 +5,10 @@ body {
   text-align: center;
 }
 
-.controls {
+/*.controls {
   margin-bottom: 20px;
 }
+*/ 
 
 #grid {
   display: grid;
