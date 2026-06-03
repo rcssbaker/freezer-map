@@ -28,7 +28,9 @@ let keypadMode = "edit"; // "edit" or "search"
 const gridEl = document.getElementById("grid");
 
 function getLabel(r, c) {
-  return String.fromCharCode(65 + r) + (c + 1);
+  const col = String.fromCharCode(65 + c); // A–F
+  const row = r + 1;                       // 1–17
+  return col + row;
 }
 
 function renderGrid() {
