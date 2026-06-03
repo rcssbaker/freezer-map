@@ -25,31 +25,32 @@
   <input type="file" id="importFile" accept=".json">
 </div>
 
-<!-- ⭐ ON‑SCREEN KEYPAD ⭐ -->
 <div id="keypad" class="keypad hidden">
   <div id="keypad-display"></div>
+
   <div class="keypad-row">
     <button class="key">1</button>
     <button class="key">2</button>
     <button class="key">3</button>
   </div>
+
   <div class="keypad-row">
     <button class="key">4</button>
     <button class="key">5</button>
     <button class="key">6</button>
   </div>
+
   <div class="keypad-row">
-    <button class="key">7</button>
-    <button class="key">8</button>
-    <button class="key">9</button>
+    <button id="keypad-back" class="action">⌫</button>
+    <button class="key">0</button>
+    <button id="keypad-cancel" class="action">X</button>
   </div>
-<div class="keypad-row">
-  <button class="key">0</button>
-  <button id="keypad-back" class="action">⌫</button>
-  <button id="keypad-ok" class="action">OK</button>
-  <button id="keypad-cancel" class="action">X</button>
+
+  <div class="keypad-row keypad-ok-row">
+    <button id="keypad-ok" class="action ok-wide">OK</button>
+  </div>
 </div>
-</div>
+
 
 <div id="grid"></div>
 
