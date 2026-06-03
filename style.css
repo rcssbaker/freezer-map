@@ -178,3 +178,7 @@ body {
   padding: 18px 25px;
 }
 
+.cell-value {
+  transition: opacity 0.2s ease;
+}
+
