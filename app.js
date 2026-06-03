@@ -128,7 +128,7 @@ function closeKeypad() {
 // Number buttons
 document.querySelectorAll(".key").forEach(btn => {
   btn.onclick = () => {
-    keypadValue += btn.Content;
+    keypadValue += btn.textContent;
     document.getElementById("keypad-display").Content = keypadValue;
   };
 });
