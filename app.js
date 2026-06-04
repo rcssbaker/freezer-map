@@ -1,5 +1,5 @@
 // -------------------------------
-// Load or create grid
+// Load grid
 // -------------------------------
 function loadGrid() {
   const data = localStorage.getItem("gridData");
@@ -17,7 +17,7 @@ function saveGrid(grid) {
 let grid = loadGrid();
 let dragged = null;
 
-// ⭐ Keypad state
+//  Keypad state
 let keypadTarget = null;
 let keypadValue = "";
 let keypadMode = "edit"; // "edit" or "search"
@@ -103,7 +103,7 @@ function renderGrid() {
 renderGrid();
 
 // -------------------------------
-// ⭐ KEYPAD LOGIC
+//  KEYPAD LOGIC
 // -------------------------------
 function openKeypad(r, c, mode = "edit") {
   keypadMode = mode;
@@ -161,7 +161,7 @@ document.getElementById("keypad-back").onclick = () => {
 };
 
 // -------------------------------
-// ⭐ SEARCH LOGIC (now keypad‑compatible)
+// SEARCH LOGIC 
 // -------------------------------
 function runSearch(query) {
   let found = false;
